@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Cabecalho() {
+    const [count, setCount] = useState(0)
+    function conta(){
+        setCount(count + 1)
+    }
+
     return (
-        <header>
-            <p>Ó pai ó</p>
-            
+        <header>    
+            <button onClick={conta}>
+            apertou {count}
+            </button>
         </header>
     )
 }
