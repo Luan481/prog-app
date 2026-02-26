@@ -17,8 +17,8 @@ function Notas() {
         }
         else if(nota > 0){
             alert('Classificação E')
-        }
-        
+            teste()
+        }        
     }
     return (
         <div className={'notas'}>

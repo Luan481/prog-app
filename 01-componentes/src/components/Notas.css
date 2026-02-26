@@ -18,5 +18,7 @@ body{
 }
 
 .notas button:hover{
+    color: black;
+    background-color: greenyellow;
     transform: scale(1.2);
 }
