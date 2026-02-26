@@ -1,18 +1,31 @@
+import { useState } from 'react'
+
 function Maca() {
+    const[saida, setSaida] = useState('')
+
+
+    // let saida = 'Errozera bruto'
     function compraMaca(){
+
         let appleQTD = Number(prompt('Quantas maçãs desja comprar?'))
-        let val
+        let preco
         if (appleQTD < 12){
-            val = appleQTD * 0.3
-            alert('Total de ' + appleQTD + ' maçãs é R$: ' + val)
+            preco = 0.3
         } 
         else{
-            val = appleQTD * 0.25
-            alert('Total de ' + appleQTD + ' maçãs é R$: ' + val)
+            preco = 0.25
         }
+
+        let valor = appleQTD * preco
+        alert('Valor: R$' + valor.toFixed(2))
+        setSaida(`R$ ${valor.toFixed(2)}`)
     }
     return (
         <div className={'maca-container'}>
+            <p>
+                resultado: {saida}
+            </p>
+
             <h1>Maçãs</h1>
             <ul>
                 <li>Meia duzia ou mais R$: 0.25 UN</li>
