@@ -1,0 +1,33 @@
+.cont-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-header {
+  padding: 1em;
+  background-color: cadetblue;
+  color: white;
+  height: 100px;
+  display: flex;
+}
+
+.cont-main {
+  background-color: aliceblue;
+  flex: 1;
+  display: flex;
+}
+
+.botoes-nav {
+  padding: 1em;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.botoes-nav:hover {
+  color: white;
+
+}
