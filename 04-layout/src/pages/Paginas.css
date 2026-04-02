@@ -1,0 +1,12 @@
+.cont-home{
+    background-color: aliceblue;
+    flex: 1;
+}
+.cont-produtos{
+    background-color:bisque ;
+    flex: 1;
+}
+.cont-contato{
+    background-color: tomato;
+    flex: 1;
+}
