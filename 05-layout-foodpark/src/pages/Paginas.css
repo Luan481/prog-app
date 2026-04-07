@@ -1,12 +1,42 @@
 .cont-home{
-    background-color: aliceblue;
+    display: flex;
     flex: 1;
 }
+
 .cont-produtos{
-    background-color:bisque ;
     flex: 1;
 }
 .cont-contato{
-    background-color: tomato;
     flex: 1;
+}
+
+.cont-lojas{
+    background-color: darkgray;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: 1;
+    border-color: grey;
+    transition: transform 0.4s;
+    outline: none;
+}
+.cont-lojas:hover{
+    transform: scale(1.2);
+}
+
+.cont-lojas img{
+    display: flex;
+    position: relative;
+    left: 15%;
+    top: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.cont-lojas ul{
+    flex-direction: row;
 }

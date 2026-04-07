@@ -6,13 +6,14 @@
 
 .cont-header {
   padding: 1em;
-  background-color: cadetblue;
+  background-color: #F29F05;
   color: white;
   height: 100px;
   display: flex;
 }
 
 .cont-main {
+  padding: 2em;
   background-color: aliceblue;
   flex: 1;
   display: flex;
@@ -30,4 +31,7 @@
 .botoes-nav:hover {
   color: white;
 
+}
+nav h1{
+  cursor: pointer;
 }
