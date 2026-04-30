@@ -1,0 +1,13 @@
+
+.cont-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    max-width: 200px;
+    max-height: 200px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    color: rgb(82, 255, 14);
+    font-weight: 700;
+}
