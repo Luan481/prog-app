@@ -1,0 +1,29 @@
+.cont-tarefas{
+    background-color:whitesmoke;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: 2px solid rgb(205, 205, 205);
+    max-width: 400px;
+}
+
+
+
+.cont-post {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 350px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  border-radius: 25px;
+}
+
+.cont-like {
+
+  color: white;
+  padding: 2px;
+  background-color: red;
+  border-radius: 25px;
+}
