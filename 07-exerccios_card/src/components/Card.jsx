@@ -17,7 +17,7 @@ function Card({ e }) {
             {e.emoji} {e.texto}
           </p>
           <div >
-              {e.hashtags} <label className="cont-like">👍{e.curtidas}</label>
+              {e.hashtags} <span className="cont-like">👍{e.curtidas}</span>
           </div>
         </div>
       )}
