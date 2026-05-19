@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import "./App.css";
-import Compra from "./components/Compra";
-import Card from "./components/Card";
+import "./App.css"
+import Compra from "./components/Compra"
+import Card from "./components/Card"
 
 function App() {
   const [cavalos, setCavalos] = useState([
@@ -885,14 +885,31 @@ function App() {
         ))} */}
       </section>
       <section >
-        {tarefas.map((tarefa)=>(
-          <Card e={tarefa} key={tarefa.id}/>
+        {tarefas.map((tarefa) => (
+          <Card e={tarefa} key={tarefa.id} />
         ))}
       </section>
       <section>
-        {posts.map((post)=>(
-          <Card e={post} key={post.id}/>
-          ))}        
+        {posts.map((post) => (
+          <Card e={post} key={post.id} />
+        ))}
+      </section>
+      <section>
+        {carros.map((carro) => (
+          <Card e={carro} key={carro.id} />
+        ))}
+      </section>
+
+      <section>
+        {cavalos.map((cavalo) => (
+          <Card e={cavalo} key={cavalo.id} />
+        ))}
+      </section>
+
+      <section>
+        {dino.map((d) => (
+          <Card e={d} key={d.id} />
+        ))}
       </section>
     </>
   );

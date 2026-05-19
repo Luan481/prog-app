@@ -1,29 +1,127 @@
-.cont-tarefas{
-    background-color:whitesmoke;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 15px;
-    border: 2px solid rgb(205, 205, 205);
-    max-width: 400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  padding: 20px;
 }
 
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+
+.cont-card,
+.cont-tarefas,
+.cont-post,
+.cont-compra,
+.cont-pokemon {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.cont-card:hover,
+.cont-tarefas:hover,
+.cont-post:hover,
+.cont-compra:hover,
+.cont-pokemon:hover {
+  transform: translateY(-4px);
+}
+
+
+.cont-card p,
+.cont-tarefas p,
+.cont-post p,
+.cont-compra p {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+
+.cont-tarefas {
+  border-left: 6px solid #4b7bec;
+}
 
 .cont-post {
+  width: 320px;
+  background: #fafafa;
+}
+
+.cont-post div {
+  margin-top: 12px;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  max-width: 350px;
-  margin: 10px;
-  padding: 10px;
-  background-color: rgb(231, 231, 231);
-  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .cont-like {
+  background: #e3f2fd;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+}
 
-  color: white;
-  padding: 2px;
-  background-color: red;
-  border-radius: 25px;
+
+.cont-compra {
+  width: 280px;
+  border-left: 6px solid #20bf6b;
+}
+
+.linha-compra {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cont-compra h4 {
+  margin-top: 12px;
+  color: #20bf6b;
+}
+
+
+.cont-pokemon {
+  width: 180px;
+  text-align: center;
+}
+
+.cont-pokemon img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.cont-pokemon p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+  section {
+    justify-content: center;
+  }
+
+  .cont-post,
+  .cont-card,
+  .cont-compra,
+  .cont-tarefas {
+    width: 100%;
+  }
 }
