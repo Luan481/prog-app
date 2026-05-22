@@ -1,0 +1,46 @@
+.cont-card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+    border-left: 5px solid rgb(119, 119, 119);
+    transition: scale 0.1s;
+    text-transform: capitalize;
+    position: relative;
+}
+.cont-card button{
+    background-color: white;
+    border: 1px solid rgb(173, 173, 173);
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    padding: 2px;
+    font-size: xx-small;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transition: scale 0.2s, background-color 0.2s;
+}
+.cont-card button:hover{
+    scale: 1.2;
+    background-color: rgb(233, 9, 9);
+}
+.cont-card img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+}
+.cont-card:hover{
+    scale: 1.05;
+}
+@media (prefers-color-scheme: dark) {
+    .cont-card{
+        color: black;
+    }
+}

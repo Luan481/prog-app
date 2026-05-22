@@ -1,0 +1,20 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+:root {
+  --cor-fundo: #ffffff;
+  --cor-texto: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #97D4FA;
+    --cor-texto: #ffffff;
+  }
+}
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+}

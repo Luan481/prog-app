@@ -1,8 +1,8 @@
 import React from 'react'
-
-function Itens({ i }) {
+import './Itens.css'
+function Itens({ i, excluir }) {
     return (
-        <div>
+        <div className='cont-card'>
             <img
                 src={
                     i.img === ''
@@ -14,7 +14,8 @@ function Itens({ i }) {
             />
 
             <p>Item: {i.nome}</p>
-            <p>Valor: {Number(i.preco).toFixed(2)}</p>
+            <p>Valor: R${Number(i.preco).toFixed(2)}</p>
+            <button onClick={() => (excluir(i.id))}>🗑️</button>
         </div>
     )
 }
